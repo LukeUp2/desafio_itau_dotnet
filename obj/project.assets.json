@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "FluentValidation/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/8.0.16": {
         "type": "package",
         "dependencies": {
@@ -111,6 +124,21 @@
     }
   },
   "libraries": {
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.OpenApi/8.0.16": {
       "sha512": "jeZBYi62BKGRZXEkXAr9hj1L6u71HRKE7EPaZBouF1xmKdQIX7GO5oSRLTQLQmmST0y/aaI+Mr4OzyyRjmBFog==",
       "type": "package",
@@ -477,6 +505,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "FluentValidation >= 12.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.16",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -518,6 +547,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.16, )"

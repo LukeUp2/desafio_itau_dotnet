@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uczeGqGLs4eNXhbiTyuXQIPaG0uZLRyBsqXwkzwSTyYpasLKqnOEbnyKveesS/25nlipyJ5nQbP3lH7dTM9s+w==",
+  "dgSpecHash": "5lm1X6Xv9RNeygA0OpoIFoAEE6IOoANoJ99O70O0rFN1Hs+1j+IWFawLev+6JxntD22uieGIPF5OWC1Lx2PR9Q==",
   "success": true,
   "projectFilePath": "/home/joaofreitas/Dev/Desafio_Itau.Api/Desafio_Itau.Api.csproj",
   "expectedPackageFiles": [
+    "/home/joaofreitas/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
     "/home/joaofreitas/.nuget/packages/microsoft.aspnetcore.openapi/8.0.16/microsoft.aspnetcore.openapi.8.0.16.nupkg.sha512",
     "/home/joaofreitas/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/joaofreitas/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
