@@ -1,12 +1,12 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+WORKDIR /
 
 COPY *.sln ./
-COPY src/Desafio_Itau.Api/*.csproj ./src/Desafio_Itau.Api/
-RUN dotnet restore ./src/Desafio_Itau.Api/Desafio_Itau.Api.csproj
+COPY Desafio_Itau.Api/*.csproj ./Desafio_Itau.Api/
+RUN dotnet restore ./Desafio_Itau.Api/Desafio_Itau.Api.csproj
 
 COPY . .
-WORKDIR /src/Desafio_Itau.Api
+WORKDIR /Desafio_Itau.Api
 RUN dotnet publish -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
