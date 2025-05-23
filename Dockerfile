@@ -2,8 +2,8 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 COPY *.sln ./
-COPY Desafio_Itau.Api/*.csproj ./Desafio_Itau.Api/
-RUN dotnet restore
+COPY src/Desafio_Itau.Api/*.csproj ./src/Desafio_Itau.Api/
+RUN dotnet restore ./src/Desafio_Itau.Api/Desafio_Itau.Api.csproj
 
 COPY . .
 WORKDIR /src/Desafio_Itau.Api
