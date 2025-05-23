@@ -11,8 +11,8 @@ namespace Desafio_Itau.Api.UseCases.CreateTransacaoUseCase
     {
         public CreateTransacaoUseCaseValidator()
         {
-            RuleFor(x => x.Valor).GreaterThanOrEqualTo(0).WithMessage("O valor da transação deve ser maior ou igual a 0.");
-            RuleFor(x => x.DataHora).GreaterThan(DateTime.Now).WithMessage("A transação não pode ocorrer no futuro.");
+            RuleFor(x => x.Valor).GreaterThan(0).WithMessage("O valor da transação deve ser maior que 0.");
+            RuleFor(x => x.DataHora).Must(x => x <= DateTime.UtcNow).WithMessage("A transação não pode ocorrer no futuro.");
         }
     }
 }

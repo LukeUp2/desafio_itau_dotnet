@@ -511,24 +511,31 @@
     ]
   },
   "packageFolders": {
-    "/home/joaofreitas/.nuget/packages/": {}
+    "C:\\Users\\joaos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joaofreitas/Dev/Desafio_Itau.Api/Desafio_Itau.Api.csproj",
+      "projectUniqueName": "C:\\Users\\joaos\\Dev\\C#_Projects\\desafio_itau_dotnet\\Desafio_Itau.Api.csproj",
       "projectName": "Desafio_Itau.Api",
-      "projectPath": "/home/joaofreitas/Dev/Desafio_Itau.Api/Desafio_Itau.Api.csproj",
-      "packagesPath": "/home/joaofreitas/.nuget/packages/",
-      "outputPath": "/home/joaofreitas/Dev/Desafio_Itau.Api/obj/",
+      "projectPath": "C:\\Users\\joaos\\Dev\\C#_Projects\\desafio_itau_dotnet\\Desafio_Itau.Api.csproj",
+      "packagesPath": "C:\\Users\\joaos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joaos\\Dev\\C#_Projects\\desafio_itau_dotnet\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/joaofreitas/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\joaos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -541,7 +548,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -579,7 +592,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

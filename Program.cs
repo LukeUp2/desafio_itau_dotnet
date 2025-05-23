@@ -10,6 +10,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
 
+builder.Services.AddRouting(opt => opt.LowercaseUrls = true);
+
 builder.Services.AddApplicationExtension();
 
 var app = builder.Build();
@@ -22,5 +24,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.MapControllers();
 app.Run();
