@@ -40,6 +40,7 @@ namespace Desafio_Itau.Api.Filters
                 context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                 context.Result = new UnprocessableEntityObjectResult(new ResponseErrorJson(exception!.ErrorMessage));
             }
+
         }
         private static void HandleUnknowException(ExceptionContext context)
         {

@@ -17,7 +17,7 @@ namespace desafio_itau_dotnet.Data
 
         public List<TransacaoDto> GetTransacoesLastMinute()
         {
-            return _transacoes.Where(t => t.DataHora >= DateTime.UtcNow.AddMinutes(-1)).ToList();
+            return _transacoes.Where(t => t.DataHora >= DateTime.UtcNow.AddSeconds(-60)).ToList();
         }
 
         public void Add(TransacaoDto transacao)

@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "STUd7CV99cNLsUr/FPaRpMiAEJNLk7QIjt4dju1MdV4=",
+  "Hash": "0hwUU8IS4xuBo6Ekf4nW/9AvIn1SwRSrJPNCKZy5EwA=",
   "Source": "Desafio_Itau.Api",
   "BasePath": "_content/Desafio_Itau.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

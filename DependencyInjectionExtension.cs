@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Desafio_Itau.Api.UseCases.CreateTransacao;
+using Desafio_Itau.Api.UseCases.GetEstatistica;
+using Desafio_Itau.Api.UseCases.ListAllTransacoes;
 using desafio_itau_dotnet.Data;
 using desafio_itau_dotnet.UseCases.DeleteTransacao;
 
@@ -20,6 +22,8 @@ namespace Desafio_Itau.Api
         {
             services.AddScoped<CreateTransacaoUseCase>();
             services.AddScoped<DeleteTransacaoUseCase>();
+            services.AddScoped<ListAllTransacoesUseCase>();
+            services.AddScoped<GetEstatisticaUseCase>();
         }
 
         private static void AddInMemoryObject(IServiceCollection services)
